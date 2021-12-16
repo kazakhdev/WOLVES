@@ -1,52 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        body{
+        body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             width: 600px;
             margin: auto;
-
         }
-        h1{
+        /* style section one showcase */
+        
+        #showcase {
+            height: 35vh;
+            width: 100%;
+            position: relative;
+        }
+        
+        .bg-img {
+            width: 100%;
+            height: 100%;
+            background: url(https://defenders.org/sites/default/files/styles/meta_image/public/2019-06/Orca.jpg?itok=3hp0GFaU);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        #showcase h2 {
+            position: absolute;
+            top: 20%;
+            left: 20px;
+            font-size: 3em;
+            color: white;
+        }
+        
+        #showcase p {
+            position: absolute;
+            top: 80%;
+            left: 20px;
+            color: white;
+        }
+        
+        h1 {
             text-transform: uppercase;
             font-size: 1.5rem;
             font-weight: bold;
             text-align: center;
             padding: 20px 0 20px 0;
-        
         }
-        h3{
+        
+        h3 {
             font-weight: bold;
             text-align: center;
             padding: 5px 0 5px 0;
             border-bottom: 2px solid yellow;
             width: 180px;
         }
-        p{
+        
+        p {
             text-align: center;
             padding: 5px 0 5px 0;
             width: 180px;
         }
-        img{
+        
+        img {
             width: 180px;
         }
-        .wrapper{
+        
+        .wrapper {
             display: flex;
             justify-content: space-between;
         }
-        
     </style>
 </head>
+
 <body>
     <div class="main">
+        <!-- showcase html  -->
+        <section id="showcase">
+            <div class="bg-img"></div>
+            <div class="showcase-text">
+                <h2>Orcas in Trouble</h2>
+                <p>Defenders: Team-WOLVES </p>
+            </div>
+        </section>
+
         <h1>Most recent updates</h1>
         <div class="wrapper">
             <div class="block block1">
@@ -67,4 +110,5 @@
         </div>
     </div>
 </body>
+
 </html>
